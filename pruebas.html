@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Union Bautista Boliviana</title>
+    <link rel="stylesheet" type="text/css" href="./PruebaStilo.css"
+   
+</head>
+<body>
+    <header>
+        <img src="./ImgeIEBLA/UBB.png" alt="Logo de la Union Bautista Boliviana">
+        <h1>Union Bautista Boliviana</h1>
+        <button class="login-button">Inicio de Sesión</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Quienes Somos</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#noticia">Noticias</a></li>
+            <li><a href="#contact">Contacto</a></li>
+           
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Bienvenidos </h2>
+    </div>
+    <div class="content" id="home">
+        <h2>Sobre Nosotros</h2>
+        <p>La Unión Bautista Boliviana es una comunidad de fe dedicada a vivir y compartir las enseñanzas de Jesús. Desde 1898, hemos trabajado para transformar vidas y comunidades a través del amor y la gracia de Dios.</p>
+        <a href="URL_DEL_DOCUMENTO.pdf" download class="download-button">Descarga el Manual Bautista</a>
+    </div>
+    <div class="content" id="gallery">
+        <h2>Galería</h2>
+        <div class="carousel">
+            <img src="./ImgeIEBLA/ubb_prado_pas_habalndo.jpg" alt="Imagen 1" class="active">
+            <img src="./ImgeIEBLA/ubb_coro_los_andes.jpg" alt="Imagen 2">
+            <img src="./ImgeIEBLA/ubb_pulpito iglesia.jpg" alt="Imagen 3">
+            <img src="./ImgeIEBLA/ubb_prado_pas_habalndo.jpg" alt="Imagen 4">
+            <img src="./ImgeIEBLA/ubb_coro_losandes.jpg" alt="Imagen 5">
+            <div class="carousel-controls">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Noticias</h2>
+    <article class="info-card">
+     
+        <img src="./ImgeIEBLA/ubb_cena.jpg"   />
+        <div>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptates, dolores!
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
+            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
+            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
+            tempora modi.
+          </p>
+        </div>
+      </article>
+      <article class="info-card reverse-flexrow">
+        <img src="./ImgeIEBLA/ubb_coro_losandes.jpg"   />
+        <div>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptates, dolores!
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
+            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
+            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
+            tempora modi.
+          </p>
+        </div>
+      </article>
+    </div>
+    <footer>
+       
+        <div class="content" id="contact">
+            <h2>Contacto</h2>
+       
+                <h3>Union Bautista Boliviana</h3>
+                <p><strong>Dirección:</strong> Calle Ficticia 123, La Paz, Bolivia</p>
+                <p><strong>Teléfono:</strong> +591 2 1234567</p>
+                <p><strong>Correo Electrónico:</strong> contacto@ubb.org.bo</p>
+                &copy; 2025 Union Bautista Boliviana. Todos los derechos reservados.
+        </div>
+    </footer>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;}
+           

@@ -1,0 +1,277 @@
+/* Estilos Encabezado*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-escritorio{
+    background-color: #ecf1f5;
+    padding: 0 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 70px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+    transform: translateY(-3px);
+}
+
+.header-nav ul{
+    display: flex;
+    gap: 20px;
+}
+ 
+.header-nav a:hover {
+    border-bottom: 2px solid #64C0BA;
+    color: #64C0BA;
+    transition-duration: 100ms;
+}
+
+.menu-hamburguesa{
+    display: none;
+    font-size: 30px;
+    color: #C4C4C4;
+    background-color: #FFF;
+    border: none;
+}
+
+.menu-hamburguesa-nav{
+    display: none;
+}
+
+.menu-hamburguesa-nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e5e5e5cc;
+}
+
+.visible{
+    display: block ;
+}
+
+@media (max-width: 700px) { 
+    header{
+        padding: 0;
+    }
+    .header-escritorio{
+        padding: 0 10px ;
+    }
+    .menu-hamburguesa{
+        display: block;
+    }
+    .header-nav{
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header img {
+    height: 80px; /* Ajusta el tamaño del logo aquí */
+    margin-right: 15px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.login-button {
+    background-color: #2980b9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-button:hover {
+    background-color: #3498db;
+}
+nav {
+    background-color: #34495e;
+    padding: 10px 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.hero {
+    background-image: url('./ImgeIEBLA/ubb_cena.jpg'); /* URL de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 80px;
+    animation: zoomIn 2s ease-in-out;
+}
+.hero h2 {
+    font-size: 2em;
+    margin: 0;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.download-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.download-button:hover {
+    background-color: #3498db;
+}
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel img {
+    width: 100%;
+    display: none;
+}
+.carousel img.active {
+    display: block;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.contact-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+.contact-box h3 {
+    margin: 0;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.contact-box p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

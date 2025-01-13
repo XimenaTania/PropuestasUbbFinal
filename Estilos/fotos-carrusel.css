@@ -1,0 +1,37 @@
+/* Estilos Carrusel */
+
+/* Es en este archivo en el que debemos modificar las url de las imagenes, 
+cada una de las url representa la ruta hacia cada una de las imagenes, unicamente hay
+que modificar la ruta con la nueva ruta de nuestro personaje.
+
+    background: url("") center no-repeat;
+
+la nueva ruta debe estar dentro de las comillas
+
+*/
+
+
+.carrusel-img {
+    background: url("./ImgeIEBLA/SantaCruz.png") center no-repeat;
+}
+
+.carrusel-img1 {
+    background: url("../ImgeIEBLA/IMG_20240811_210654\ -\ La\ Lumbera\ Iglesia\ Evangelica\ Bautista.jpg") center no-repeat;
+}
+
+.carrusel-img2 {
+    background: url("../ImgeIEBLA/IMG_20240811_210654\ -\ La\ Lumbera\ Iglesia\ Evangelica\ Bautista.jpg") center no-repeat;
+}
+.carrusel-img3 {
+    background: url("../logosConectar/logoConectarLabCeleste.png") center no-repeat;
+}
+
+.carrusel-img4 {
+    background: url("../logosConectar/logoConectarLabCeleste.png") center no-repeat;
+}
+.carrusel-img5 {
+    background: url("../logosConectar/logoConectarLabCeleste.png") center no-repeat;
+}
+.carrusel-img6 {
+    background: url("../logosConectar/logoConectarLabCeleste.png") center no-repeat;
+}
