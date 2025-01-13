@@ -3,34 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texto sobre Imagen</title>
-    <style>
-        .image-container {
-            position: relative;
-            width: 50%;
-            border-radius: 50%;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
-            color: white;
-            width: 100%;
-            text-align: center;
-            padding: 50px;
-        }
-    </style>
+    <title>Imagen y Texto Responsivo con Animación</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.fade-in {
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .text-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+</style>
 <body>
-
-    <div class="image-container">
-        <img src="./mi-primer-sitio-web/ImgeIEBLA/312148721_3282501658665793_638717752187930410_n.jpg" alt="Imagen">
-        <div class="overlay">Este es el texto sobre la  fdgddfhfhfg dgfhfghfgh ghfghfgh </div>
+    <div class="container">
+        <div class="image-container fade-in">
+            <img src="./mi-primer-sitio-web/ImgeIEBLA/384742012_704452275052274_4285529873813816505_n.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="text-container fade-in">
+            <p>Este es el texto que acompaña a la imagen. Puedes poner cualquier contenido aquí.</p>
+        </div>
     </div>
-
 </body>
 </html>
